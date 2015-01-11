@@ -1,0 +1,144 @@
+body {
+  color: #fff;
+  text-align: center;
+}
+
+.page {
+  position: relative;
+}
+.features {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example-page-1 {
+  .brand {
+    width: 100%;
+  }
+  .title {
+    margin: 2em auto;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+  }
+}
+.example-page-2 {
+  $width: 120px;
+  
+  .features {
+    position: relative;
+
+    width: $width * 3;
+    height: $width * 3;
+  }
+  .feature {
+    position: absolute;
+    width: $width;
+    height: $width;
+
+
+    &:nth-child(1) {
+      top: 25%;
+      left: 25%;
+      margin-top: -$width/2;
+      margin-left: -$width/2;
+    }
+    &:nth-child(2) {
+      top: 25%;
+      left: 75%;
+      margin-top: -$width/2;
+      margin-left: -$width/2;
+    }
+    &:nth-child(3) {
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      margin-top: -$width/2;
+      margin-left: -$width/2;
+
+    }
+
+    &:nth-child(4) {
+      top: 75%;
+      left: 25%;
+      margin-top: -$width/2;
+      margin-left: -$width/2;
+    }
+    &:nth-child(5) {
+      top: 75%;
+      left: 75%;
+      margin-top: -$width/2;
+      margin-left: -$width/2;
+    }
+  }
+}
+
+.example-page-3 {
+  $height: 100%;
+
+  .features {
+    height: $height;
+  }
+  .feature {
+    height: $height / 5;
+  }
+}
+
+.example-page-4 {
+  $height: 100%;
+
+  .features {
+    height: $height;
+  }
+  .feature {
+    height: $height / 3;
+  }
+}
+
+.example-page-5 {
+  $width: 100px;
+
+  .features {
+    position: relative;
+    height: 100%;
+
+  }
+  .feature {
+    position: absolute;
+    width: $width;
+    height: $width;
+
+    &:nth-child(1) {
+      right: 0;
+
+        transform: rotate(-30deg);
+    }
+    &:nth-child(2) {
+      top: $width * 3 / 2;
+      left: 0;
+    }
+    &:nth-child(3) {
+      top: $width * 4;
+      left: $width;
+
+      transform: rotate(-20deg);
+    }
+    &.text {
+      top: $width * 3 / 2;
+      left: $width * 3 / 2;
+
+      width: $width * 2;
+      height: $width * 2;
+
+      line-height: 2;
+
+      transform: rotate(30deg) translate(-10px, 0);
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
