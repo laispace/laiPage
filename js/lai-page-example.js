@@ -1,4 +1,6 @@
-var opts = {}
+var opts = {
+    currentPageIndex: 0
+};
 var page = new Page(opts);
 
 // dev tools
@@ -10,14 +12,14 @@ Dev.setRandomBgColor = function (selector) {
     })
 };
 Dev.getRandomBgColor = function () {
-    var r = Dev.getRanDomNumber(0,255);
-    var g = Dev.getRanDomNumber(0,255);
-    var b = Dev.getRanDomNumber(0,255);
-    var a = Dev.getRanDomNumber(50,100) / 100;
+    var r = Dev.getRandomNumber(0,255);
+    var g = Dev.getRandomNumber(0,255);
+    var b = Dev.getRandomNumber(0,255);
+    var a = Dev.getRandomNumber(50,100) / 100;
     return 'rgba(' + r + ',' + g + ',' + b + ',' + a +')';
 };
 
-Dev.getRanDomNumber = function (min, max) {
+Dev.getRandomNumber = function (min, max) {
     var range = max - min;
     var result = Math.floor(Math.random() * range) + min;
     return result;

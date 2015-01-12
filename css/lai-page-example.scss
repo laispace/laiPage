@@ -1,3 +1,19 @@
+.clearfix {
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    visibility: hidden;
+    clear: both;
+  }
+}
+@for $i from 1 through 10 {
+  .col-#{$i} {
+    width: #{$i}0%;
+    float: left;
+  }
+}
+
 body {
   color: #fff;
   text-align: center;
@@ -14,23 +30,74 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.example-page-1 {
+.features {
+  .row-2 {
+    @extend .clearfix;
+    .feature {
+      width: 50%;
+      float: left;
+    }
+  }
+  .row-3 {
+    @extend .clearfix;
+    .feature {
+      width: 33%;
+      float: left;
+    }
+  }
+  .row-4 {
+    @extend .clearfix;
+    .feature {
+      width: 25%;
+      float: left;
+    }
+  }
+  .row-5 {
+    @extend .clearfix;
+    .feature {
+      width: 20%;
+      float: left;
+    }
+  }
+}
+
+.feature {
+  position: relative;
+
+  .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 100%;
+
+      margin: 0;
+      padding: 0;
+    
+      transform: translate(-50%,-50%);
+      text-align: center;
+  }
+}
+
+.example-page-index {
   .brand {
     width: 100%;
   }
   .title {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
     margin: 2em auto;
+
     font-size: 1.5em;
     color: #fff;
     text-align: center;
   }
-}
-.example-page-2 {
-  $width: 120px;
-  
-  .features {
-    position: relative;
 
+  $width: 120px;
+
+  .features {
     width: $width * 3;
     height: $width * 3;
   }
@@ -59,6 +126,7 @@ body {
       margin-top: -$width/2;
       margin-left: -$width/2;
 
+      border-radius: 50%;
     }
 
     &:nth-child(4) {
@@ -76,29 +144,23 @@ body {
   }
 }
 
-.example-page-3 {
-  $height: 100%;
+.example-page-list-1 {
+  $height: 150px;
 
-  .features {
-    height: $height;
-  }
   .feature {
-    height: $height / 5;
+    height: $height;
   }
 }
 
-.example-page-4 {
-  $height: 100%;
+.example-page-list-2 {
+  $height: 100px;
 
-  .features {
-    height: $height;
-  }
   .feature {
-    height: $height / 3;
+    height: $height;
   }
 }
 
-.example-page-5 {
+.example-page-contact {
   $width: 100px;
 
   .features {
@@ -135,10 +197,29 @@ body {
 
       line-height: 2;
 
-      transform: rotate(30deg) translate(-10px, 0);
+      transform: rotate(45deg) translate(-10px, 0);
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        transform: rotate(-45deg) translate(-20px, 30px);
+      }
     }
     img {
       max-width: 100%;
+    }
+  }
+
+  .contact {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+
+    a {
+      color: inherit;
+      font-size: 2em;
+      text-decoration: none;
     }
   }
 }

@@ -10,7 +10,7 @@ Page.prototype.init = function () {
 
     this.width = $(window).width();
     this.height = $(window).height();
-    this.$container = opts.container ? $(opts.container) : $('.pages');
+    this.$container = $('.pages');
     this.$pages = this.$container.find('.page');
 
     this.currentPageIndex = opts.currentPageIndex ? opts.currentPageIndex : 0;
