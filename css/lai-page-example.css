@@ -300,6 +300,7 @@ body {
             transform: translateY(0px);
   }
 }
+
 .upDown {
   -webkit-animation-name: upDown;
           animation-name: upDown;

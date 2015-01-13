@@ -2,7 +2,6 @@ var autoprefixer = require('autoprefixer-core');
 
 module.exports = function(grunt){
     require('load-grunt-tasks')(grunt);
-
     grunt.initConfig({
         sass: {
             dist: {
@@ -57,9 +56,6 @@ module.exports = function(grunt){
                 }
             }
         }
-
-
     });
-
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['sass', 'postcss', 'watch']);
 };

@@ -146,6 +146,10 @@
 
     <script src="js/lai-util.js"></script>
     <script>
+        var opts = {
+            currentPageIndex: 0
+        };
+        var page = new window.Page(opts);
         laiUtil.setRandomBgColor('.page');
         laiUtil.setRandomBgColor('.feature');
         laiUtil.setRandomBgColor('.usage');

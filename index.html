@@ -54,15 +54,24 @@
                 </div>
             </div>
         </div>
+
+        <i data-animation="animated upDown infinite" class="icon-arrow-down"></i>
     </div>
+
+    <!--TODO zepto AMD 化-->
     <script src="libs/zeptojs/src/zepto.js"></script>
     <script src="libs/zeptojs/src/event.js"></script>
     <script src="libs/zeptojs/src/touch.js"></script>
     <script src="libs/zeptojs/src/detect.js"></script>
+
     <script src="js/lai-page.js"></script>
 
     <script src="js/lai-util.js"></script>
     <script>
+        var opts = {
+            currentPageIndex: 0
+        };
+        var page = new window.Page(opts);
         laiUtil.setRandomBgColor('.page');
         laiUtil.setRandomBgColor('.feature');
         laiUtil.setRandomBgColor('.usage');

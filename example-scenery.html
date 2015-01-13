@@ -17,7 +17,7 @@
         </div>
         <div class="page">
             <div class="text-wrapper">
-                <p data-animation="top">弯如弓</p>
+                <p data-animation="up">弯如弓</p>
                 <h2 data-animation="right">月</h2>
             </div>
         </div>
@@ -54,6 +54,10 @@
 
     <script src="js/lai-util.js"></script>
     <script>
+        var opts = {
+            currentPageIndex: 0
+        };
+        var page = new window.Page(opts);
         laiUtil.setRandomBgColor('.page');
         laiUtil.setRandomBgColor('.feature');
         laiUtil.setRandomBgColor('.usage');
