@@ -1,0 +1,92 @@
+.page:nth-child(1) {
+  background: url("../img/bg1.jpg") center/cover;
+}
+
+.page:nth-child(2) {
+  background: url("../img/bg2.jpg") center/cover;
+}
+
+.page:nth-child(3) {
+  background: url("../img/bg3.jpg") center/cover;
+}
+
+.page:nth-child(4) {
+  background: url("../img/bg4.jpg") center/cover;
+}
+
+.page:nth-child(5) {
+  background: url("../img/bg5.jpg") center/cover;
+}
+
+.page:nth-child(6) {
+  background: url("../img/bg6.jpg") center/cover;
+}
+
+.text-wrapper {
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  color: #fff;
+}
+.text-wrapper h2 {
+  height: 50px;
+  line-height: 30px;
+  margin: 0;
+  padding: 10px 25px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+.text-wrapper p {
+  padding: 0 25px;
+}
+
+.page:nth-of-type(1) .text-wrapper {
+  top: 10%;
+  left: 30%;
+}
+
+.page:nth-of-type(2) .text-wrapper {
+  top: 58%;
+  left: 30%;
+}
+
+.page:nth-of-type(3) .text-wrapper {
+  bottom: 30%;
+  left: 30%;
+}
+
+.page:nth-of-type(4) .text-wrapper {
+  bottom: 10%;
+  left: 20%;
+}
+
+.page:nth-of-type(5) .text-wrapper {
+  top: 10%;
+  left: 50%;
+}
+
+.page:nth-of-type(6) .text-wrapper {
+  bottom: 10%;
+  left: 30%;
+}
+
+.left {
+  -webkit-animation: left 1000ms ease;
+          animation: left 1000ms ease;
+}
+
+.right {
+  -webkit-animation: right 1500ms ease;
+          animation: right 1500ms ease;
+}
+
+.up {
+  -webkit-animation: up 1000ms ease;
+          animation: up 1000ms ease;
+}
+
+.down {
+  -webkit-animation: down 1500ms ease;
+          animation: down 1500ms ease;
+}

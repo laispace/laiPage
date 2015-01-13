@@ -1,7 +1,5 @@
 @import "../libs/normalize.css/normalize.css";
 @import "../libs/animate.css/animate.css";
-@import "./lai-animate";
-@import "./lai-page-example";
 
 * {
   box-sizing: border-box;
@@ -9,6 +7,40 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+@for $i from 0 through 10 {
+  .duration-#{$i}s {
+    animation-duration: #{$i}s;
+  }
+
+  .delay-#{$i}s {
+    animation-delay: #{$i}s;
+  }
+
+  .iteration-#{$i}{
+    animation-iteration-count: #{$i};
+  }
+}
+
+.iteration-infinite {
+  animation-iteration-count: infinite;
 }
 
 .pages {

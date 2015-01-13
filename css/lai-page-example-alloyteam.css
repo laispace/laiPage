@@ -1,0 +1,228 @@
+.clearfix:before, .features .row-2:before, .features .row-3:before, .features .row-4:before, .features .row-5:before, .clearfix:after, .features .row-2:after, .features .row-3:after, .features .row-4:after, .features .row-5:after {
+  display: block;
+  content: "";
+  visibility: hidden;
+  clear: both;
+}
+
+.col-1 {
+  width: 10%;
+  float: left;
+}
+
+.col-2 {
+  width: 20%;
+  float: left;
+}
+
+.col-3 {
+  width: 30%;
+  float: left;
+}
+
+.col-4 {
+  width: 40%;
+  float: left;
+}
+
+.col-5 {
+  width: 50%;
+  float: left;
+}
+
+.col-6 {
+  width: 60%;
+  float: left;
+}
+
+.col-7 {
+  width: 70%;
+  float: left;
+}
+
+.col-8 {
+  width: 80%;
+  float: left;
+}
+
+.col-9 {
+  width: 90%;
+  float: left;
+}
+
+.col-10 {
+  width: 100%;
+  float: left;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+}
+
+.page {
+  position: relative;
+}
+
+.features {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.features .row-2 .feature {
+  width: 50%;
+  float: left;
+}
+.features .row-3 .feature {
+  width: 33%;
+  float: left;
+}
+.features .row-4 .feature {
+  width: 25%;
+  float: left;
+}
+.features .row-5 .feature {
+  width: 20%;
+  float: left;
+}
+
+.feature {
+  position: relative;
+}
+.feature .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.example-page-index .brand {
+  width: 100%;
+}
+.example-page-index .title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 2em auto;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+}
+.example-page-index .features {
+  width: 360px;
+  height: 360px;
+}
+.example-page-index .feature {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+.example-page-index .feature:nth-child(1) {
+  top: 25%;
+  left: 25%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+.example-page-index .feature:nth-child(2) {
+  top: 25%;
+  left: 75%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+.example-page-index .feature:nth-child(3) {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+  border-radius: 50%;
+}
+.example-page-index .feature:nth-child(4) {
+  top: 75%;
+  left: 25%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+.example-page-index .feature:nth-child(5) {
+  top: 75%;
+  left: 75%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+.example-page-list-1 .feature {
+  height: 150px;
+}
+
+.example-page-list-2 .feature {
+  height: 100px;
+}
+
+.example-page-contact .features {
+  position: relative;
+  height: 100%;
+}
+.example-page-contact .feature {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.example-page-contact .feature:nth-child(1) {
+  right: 0;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+.example-page-contact .feature:nth-child(2) {
+  top: 150px;
+  left: 0;
+}
+.example-page-contact .feature:nth-child(3) {
+  top: 400px;
+  left: 100px;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+.example-page-contact .feature.text {
+  top: 150px;
+  left: 150px;
+  width: 200px;
+  height: 200px;
+  line-height: 2;
+  -webkit-transform: rotate(45deg) translate(-10px, 0);
+      -ms-transform: rotate(45deg) translate(-10px, 0);
+          transform: rotate(45deg) translate(-10px, 0);
+}
+.example-page-contact .feature.text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: rotate(-45deg) translate(-20px, 30px);
+      -ms-transform: rotate(-45deg) translate(-20px, 30px);
+          transform: rotate(-45deg) translate(-20px, 30px);
+}
+.example-page-contact .feature img {
+  max-width: 100%;
+}
+.example-page-contact .contact {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+.example-page-contact .contact a {
+  color: inherit;
+  font-size: 2em;
+  text-decoration: none;
+}

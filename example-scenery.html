@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>laiPage</title>
+    <link rel="stylesheet" href="css/lai-page.css"/>
+    <link rel="stylesheet" href="css/lai-page-example-scenery.css"/>
+</head>
+<body>
+    <div class="pages">
+        <div class="page">
+            <div class="text-wrapper">
+                <h2 data-animation="left">樱</h2>
+                <p data-animation="up">淡如胭脂</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="text-wrapper">
+                <p data-animation="top">弯如弓</p>
+                <h2 data-animation="right">月</h2>
+            </div>
+        </div>
+        <div class="page">
+            <div class="text-wrapper">
+                <h2 data-animation="left">枫</h2>
+                <p data-animation="right">红似海</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="text-wrapper">
+                <h2 data-animation="right">爱</h2>
+                <p data-animation="left">浩如海</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="text-wrapper">
+                <h2 data-animation="up">额</h2>
+                <p data-animation="left">这个是啥</p>
+            </div>
+        </div>
+        <div class="page">
+            <div class="text-wrapper">
+                <p data-animation="left">陈奕迅那首最好听</p>
+                <h2 data-animation="down">摩天轮</h2>
+            </div>
+        </div>
+    </div>
+    <script src="libs/zeptojs/src/zepto.js"></script>
+    <script src="libs/zeptojs/src/event.js"></script>
+    <script src="libs/zeptojs/src/touch.js"></script>
+    <script src="libs/zeptojs/src/detect.js"></script>
+    <script src="js/lai-page.js"></script>
+
+    <script src="js/lai-util.js"></script>
+    <script>
+        laiUtil.setRandomBgColor('.page');
+        laiUtil.setRandomBgColor('.feature');
+        laiUtil.setRandomBgColor('.usage');
+    </script>
+</body>
+</html>
