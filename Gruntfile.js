@@ -1,6 +1,9 @@
 var autoprefixer = require('autoprefixer-core');
 
 module.exports = function(grunt){
+
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
         // pkg: grunt.file.readJSON('package.json'),
 
@@ -71,22 +74,23 @@ module.exports = function(grunt){
             //},
             scss: {
                 files: ['css/*.scss'],
-                tasks: ['sass','postcss']
+                tasks: ['newer:sass','newer:postcss'],
+                options: {
+                    livereload: true
+                }
             }
         }
-
-
     });
 
-    //grunt.loadNpmTasks('grunt-contrib-clean');
-    //grunt.loadNpmTasks('grunt-contrib-copy');
-    //grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    //grunt.loadNpmTasks('grunt-at-csstidy');
-    grunt.loadNpmTasks('grunt-postcss');
-    //grunt.loadNpmTasks('grunt-nodemon');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    //grunt.loadNpmTasks('grunt-open');
+    ////grunt.loadNpmTasks('grunt-contrib-clean');
+    ////grunt.loadNpmTasks('grunt-contrib-copy');
+    ////grunt.loadNpmTasks('grunt-contrib-jshint');
+    //grunt.loadNpmTasks('grunt-contrib-sass');
+    ////grunt.loadNpmTasks('grunt-at-csstidy');
+    //grunt.loadNpmTasks('grunt-postcss');
+    ////grunt.loadNpmTasks('grunt-nodemon');
+    //grunt.loadNpmTasks('grunt-contrib-watch');
+    ////grunt.loadNpmTasks('grunt-open');
 
 
     // 生产环境下执行 grunt

@@ -1,7 +1,7 @@
 var opts = {
     currentPageIndex: 0
 };
-var page = new Page(opts);
+var page = new window.Page(opts);
 
 // dev tools
 var Dev = {};
